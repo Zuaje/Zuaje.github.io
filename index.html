@@ -1,9 +1,89 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+    <body>
+        <div class="wrap">
+          <header>
+            <div class="brand">
+              <div class="logo-div">
+                <img class="logo" src="Images/logo 250px.png">
+              </div>
+              <div>
+                <div style="font-weight:800;font-size:16px">Daniel</div>
+                <div style="color:var(--muted);font-size:13px">Frontend • Problem Solver • Learner</div>
+              </div>
+            </div>
+                <!--navigatoin tabs-->
+            <nav aria-label="Main navigation">
+              <a href="#projects">Projects</a>
+              <a href="#about">About</a>
+              <a href="#contact">Contact</a>
+            </nav>
+          </header>
 
-<body>
-  <h1>Zuaje</h1>
-  <p>Welcome to this website!</p>
-  <img src="https://content.codecademy.com/articles/github-pages-via-web-app/happy-ice-cream.gif" />
+      <!--Main content-->
+          <main>
+            <section class="hero">
+              <div class="intro" id="about">
+                <h1>Hi — I'm Daniel</h1>
+                <p class="small">I want to build thoughtful things and like to keep learning new things. Below you'll find a selection of my projects.</p>
+      
+                <div class="quote">
+                  <div class="pill">Quick intro</div>
+                  <div style="flex:1">
+                    <!-- Text on the card - intro-->
+                    <strong>I'm Daniel</strong> — 22 years old. I enjoy driving my car, helping people, and learning new things. I love turning ideas into small, useful projects and sharing what I learn along the way.
+                  </div>
+                </div>
+      
+                <div style="margin-top:16px;
+                display:flex;
+                gap:10px;
+                align-items:center">
+                  <button class="btn">See projects</button>
+                  <a class="btn ghost" href="#contact" role="button">Get in touch</a>
+                </div>
+              </div>
+                <!--right side presentation card-->
+              <aside class="profile-card">
+                <div class="avatar" aria-hidden="true"><img class="logo-avatar" src="Images/logo 250px.png"></div>
+                <div style="font-weight:700;font-size:18px">Daniel Azuaje</div>
+                <div class="meta">22 y/o · Enthusiast driver · Problem solver</div>
+                <div style="margin-top:12px;color:var(--muted);font-size:14px">Currently working as: Fachkraft im Fahrbetrieb or Specialist in Driving operations at Stadtwerke München GmbH</div>
+                <div style="margin-top:12px;display:flex;justify-content:center;gap:8px">
+                  <a class="btn ghost" href="https://github.com/Zuaje" target="_blank">GitHub</a>
+                  <a class="btn ghost" href="https://www.linkedin.com/in/daniel-freygang-b250a4291/" target="_blank">LinkedIn</a>
+                </div>
+              </aside>
+            </section>
+
+            <!--Projects section-->
+            <section id="projects" class="projects">
+              <h2 style="margin:0 0 12px 0">Selected projects</h2>
+              <div class="projects-row" id="projectsRow" aria-label="Projects list"></div>
+            </section>
+      
+          </main>
+      
+          <footer id="contact">
+            <div>
+              <div style="font-weight:700">Let's build something</div>
+              <div class="small">Email: <a href="mailto:danielfreygang03@gmail.com">danielfreygang03@gmail.com</a> · Location: Munich, Germany</div>
+            </div>
+            <div class="small">© <span id="year">2025</span> Daniel Azuaje Freygang</div>
+          </footer>
+      
+        </div>
+      <!--Projects for the page-->
+        <section class="personal-projects">
+            <div class="p-1">
+                
+            </div>
+        </section>
 </body>
-
 </html>
